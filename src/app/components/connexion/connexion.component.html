@@ -1,29 +1,30 @@
-<div class="container">
-    <div class="row">
-        <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
-            <div class="panel border bg-white">
-                <div class="panel-heading">
-                    <h3 class="pt-3 font-weight-bold">
-                        Connexion
-                    </h3>
-                </div>
-                <div class="panel-body p3">
-                    <form>
-                        <div class="form-group p3">
-                            <div class="input-field">
-                                <span class="fa fa-user p-2"></span>
-                                <input type="text" placeholder="Nom d'utilisateur">
-                            </div>
+<section class="login py-5 bg-light">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-5">
+                <img src="../../../assets/image/plat-petit.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-7 text-center py-5">
+                <h1 class=" animate__animated animate__heartBeat animate__infinite">Connexion</h1>
+                <form action="#" class="pl-5">
+                    <div class="form-row py-3 pt-5">
+                        <div class="offset-1 col-lg-10">
+                            <input type="text" class="inp px-3" placeholder="Email">
                         </div>
-                        <div class="form-group p3">
-                            <div class="input-field">
-                                <span class="fa fa-lock p-2"></span>
-                                <input type="password" placeholder="Mot de passe">
-                            </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="offset-1 col-lg-10">
+                            <input type="password" class="inp px-3" placeholder="Mot de passe">
                         </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-row py-3">
+                        <div class="offset-1 col-lg-10">
+                            <button class="btn1">Connexion</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="pr-0">Vous n'avez pas un compte? <a routerLink="/inscription">inscrivez-vous ici</a></p>
             </div>
         </div>
     </div>
-</div>
+</section>
