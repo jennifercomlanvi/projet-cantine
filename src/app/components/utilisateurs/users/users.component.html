@@ -1,0 +1,19 @@
+<table class="table" id='tab'>
+    <thead>
+        <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Email</th>
+            <th scope="col">telephone</th>
+            <th scope="col">cagnotte</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{ user.name }} {{ user.firstname }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone }}</td>
+            <td>{{ user.wallet }}</td>
+            
+        </tr>
+    </tbody>
+</table>

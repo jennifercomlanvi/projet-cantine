@@ -1,6 +1,26 @@
 .acceuil{
-    background: linear-gradient(rgba(0,0,0,0.5));
-    background-image: url('../../../assets/image/accueil.jpg');
+    // background-image: linear-gradient(rgba(0,0,0,0.5));
+    // background-image: url('../../../assets/image/accueil.jpg');
+    background-image: linear-gradient(rgba(0, 0.5, 0.5, 0), rgba(28, 1, 1, 0.014)),
+                  url("../../../assets/image/accueil.jpg");
     background-size: cover;
-    height: 890px;
+    height: 875px;
+}
+
+.redressed{
+    font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+}
+.merriweather{
+    font-family:'Merriweather', serif;
+}
+.btn-order{
+    // margin-right: 5px;
+    color: violet;
+    border-color: violet;
+    transition: 0.5s;
+}
+
+.btn-order:hover, .btn-order:active{
+    color: #fff;
+    background-color: violet;
 }
