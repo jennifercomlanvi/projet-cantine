@@ -9,6 +9,7 @@ import { AccueilComponent } from './components/accueil/accueil.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './components/utilisateurs/users/users.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { UsersComponent } from './components/utilisateurs/users/users.component'
     InscriptionComponent,
     AccueilComponent,
     UsersComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
