@@ -9,7 +9,9 @@ import { AccueilComponent } from './components/accueil/accueil.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './components/utilisateurs/users/users.component';
-import { MenuComponent } from './components/menu/menu.component';
+import { MenuComponent } from './components/menuduJ/menu.component';
+import { MenuaccueilComponent } from './components/menuaccueil/menuaccueil.component';
+import { MenudelasemaineComponent } from './components/menudelasemaine/menudelasemaine.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,10 @@ import { MenuComponent } from './components/menu/menu.component';
     AccueilComponent,
     UsersComponent,
     MenuComponent,
+    MenuaccueilComponent,
+    MenudelasemaineComponent,
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
