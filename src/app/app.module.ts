@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './components/utilisateurs/users/users.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { CourseComponent } from './course/course.component';
+import { BootsrappComponent } from './bootsrapp/bootsrapp.component';
+import { FooterComponent } from './components/footers/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { MenuComponent } from './components/menu/menu.component';
     AccueilComponent,
     UsersComponent,
     MenuComponent,
+    CourseComponent,
+    BootsrappComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
