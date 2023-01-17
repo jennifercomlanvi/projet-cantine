@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ConnexionComponent } from './components/connexion/connexion.component';
 import { InscriptionComponent } from './components/inscription/inscription.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './components/utilisateurs/users/users.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -25,6 +25,7 @@ import { MenuComponent } from './components/menu/menu.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

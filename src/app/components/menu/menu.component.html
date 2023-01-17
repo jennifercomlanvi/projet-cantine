@@ -1,1 +1,16 @@
-<p>menu works!</p>
+<div class="wrapper" *ngFor="let menu of menudj">
+    <div class="title">
+        <h4>{{menu.label}}</h4>
+    </div>
+    <div class="menu" *ngIf="menu.meals">
+        <div class="single-menu" *ngFor="let meal of menu.meals">
+            <img src="../../../assets/image/plat-petit.jpg" alt="">
+            <div class="menu-content">
+                <h4>{{meal.label}}<span>{{meal.priceDF}}</span></h4>
+                <p>Ce menu est composer des ingrédients:</p>
+                <p *ngFor="let ing of meal.ingredients">{{ing.label}}</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
