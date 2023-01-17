@@ -99,13 +99,12 @@ export class InscriptionComponent implements OnInit {
       }
       try {
         //Requete au service des utilisateurs
-        this.inscriptionService.createUser(this.user).subscribe(data => {
-          console.log(data);
-          this.router.navigate(['connexion']);
-        });
-      }
-      catch (error: any) {
-      }
+        await this.inscriptionService.createUser(this.user);
+        console.log(this.user);
+          // this.router.navigate(['auth/login']);
+        }
+        catch (error: any) {
+        }
     }
     
 
