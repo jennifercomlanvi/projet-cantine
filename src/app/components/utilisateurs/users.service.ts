@@ -8,9 +8,15 @@ import { environment } from 'src/environments/environment';
 })
 export class UsersService {
   public Url = environment.baseUrl + '/user/findall';
+  public UrlDetail = environment.baseUrl + '/user/find/';
+
   constructor(private httpclient:HttpClient) { }
 
   public getUsers(): Observable<any> {
     return this.httpclient.get(this.Url);
+  }
+
+  getUserById(userId: number):Observable<any>{
+    return this.httpclient.get(this.UrlDetail + `${userId}`);
   }
 }

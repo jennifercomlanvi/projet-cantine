@@ -12,6 +12,7 @@ import { UsersComponent } from './components/utilisateurs/users/users.component'
 import { MenuComponent } from './components/menuduJ/menu.component';
 import { MenuaccueilComponent } from './components/menuaccueil/menuaccueil.component';
 import { MenudelasemaineComponent } from './components/menudelasemaine/menudelasemaine.component';
+import { UserDetailComponent } from './components/utilisateurs/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MenudelasemaineComponent } from './components/menudelasemaine/menudelas
     MenuComponent,
     MenuaccueilComponent,
     MenudelasemaineComponent,
+    UserDetailComponent,
   ],
 
   imports: [

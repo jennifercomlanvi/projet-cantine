@@ -1,3 +1,4 @@
+import { UserDetailComponent } from './components/utilisateurs/user-detail/user-detail.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './components/accueil/accueil.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'menu', component:MenuComponent},
   {path:'menuaccueil', component:MenuaccueilComponent},
   {path:'menudelasemaine', component:MenudelasemaineComponent},
+  {path: 'utilisateur/:id', component :UserDetailComponent },
   {path:'', redirectTo: 'accueil', pathMatch:'full'}
 ];
 
