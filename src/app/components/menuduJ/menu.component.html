@@ -4,12 +4,13 @@
     </div>
     <div class="menu" *ngIf="menu.meals">
         <div class="single-menu" *ngFor="let meal of menu.meals">
-            <img src="../../../assets/image/plat-petit.jpg" alt="">
+            <img src="../../../assets/image/menudj.png" alt="">
             <div class="menu-content">
                 <h4>{{meal.label}}<span>{{meal.priceDF}}</span></h4>
                 <p>Ce menu est composer des ingrédients:</p>
                 <p *ngFor="let ing of meal.ingredients">{{ing.label}}</p>
             </div>
+        <button class="btn">Commander</button>    
         </div>
         
     </div>
