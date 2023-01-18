@@ -13,6 +13,11 @@ import { MenuComponent } from './components/menuduJ/menu.component';
 import { MenuaccueilComponent } from './components/menuaccueil/menuaccueil.component';
 import { MenudelasemaineComponent } from './components/menudelasemaine/menudelasemaine.component';
 import { UserDetailComponent } from './components/utilisateurs/user-detail/user-detail.component';
+import { MenuvendrediComponent } from './components/menudelasemaine/menuvendredi/menuvendredi.component';
+import { MenulundiComponent } from './components/menudelasemaine/menulundi/menulundi.component';
+import { MenumardiComponent } from './components/menudelasemaine/menumardi/menumardi.component';
+import { MenumercrediComponent } from './components/menudelasemaine/menumercredi/menumercredi.component';
+import { MenujeudiComponent } from './components/menudelasemaine/menujeudi/menujeudi.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +30,11 @@ import { UserDetailComponent } from './components/utilisateurs/user-detail/user-
     MenuaccueilComponent,
     MenudelasemaineComponent,
     UserDetailComponent,
+    MenuvendrediComponent,
+    MenulundiComponent,
+    MenumardiComponent,
+    MenumercrediComponent,
+    MenujeudiComponent,
   ],
 
   imports: [
