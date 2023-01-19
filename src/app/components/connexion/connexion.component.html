@@ -6,21 +6,24 @@
             </div>
             <div class="col-lg-7 text-center py-5">
                 <h1 class=" animate__animated animate__heartBeat">Connexion</h1>
-                <form action="#" class="pl-5">
+                <form action="#" [formGroup]="connexionForm" class="pl-5">
                     <div class="form-row py-3 pt-5">
                         <div class="offset-1 col-lg-10">
-                            <input type="text" class="inp px-3" placeholder="Email">
+                            <input type="text" class="inp px-3" formControlName="email" placeholder="Email">
+                            
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="offset-1 col-lg-10">
-                            <input type="password" class="inp px-3" placeholder="Mot de passe">
+                            <input type="password" class="inp px-3" formControlName="password" placeholder="Mot de passe">
                         </div>
                     </div>
                     <div class="form-row py-3">
                         <p class="pr-0"><a routerLink="#">Mot de passe oublié ?</a></p>
                         <div class="offset-1 col-lg-10">
-                            <button class="btn1">Connexion</button>
+                            <button routerLink="/menuaccueil"
+                             [class.disabled]="connexionForm.get('email')?.invalid || connexionForm.get('password')?.invalid"
+                             [disabled]="connexionForm.get('email')?.invalid || connexionForm.get('password')?.invalid " class="btn1">Connexion</button>
                         </div>
                     </div>
                 </form>
@@ -28,4 +31,5 @@
             </div>
         </div>
     </div>
+   
 </section>

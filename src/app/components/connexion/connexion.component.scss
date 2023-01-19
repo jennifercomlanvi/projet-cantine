@@ -48,3 +48,7 @@ img{
     background: rgba(63, 40, 108, 0.75);
     transition: 0.5s;
 }
+.disabled{
+    background-color: darkgray;
+    pointer-events: none;
+}
