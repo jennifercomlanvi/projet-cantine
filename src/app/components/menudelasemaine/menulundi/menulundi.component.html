@@ -4,7 +4,7 @@
     </div>
 </section>
 <div class="wrapper" *ngFor="let menu of menudj">
-    <div class="title">
+    <div class="title" *ngIf="menu.meals">
         <h4>{{menu.label}}</h4>
     </div>
     <div class="menu" *ngIf="menu.meals">
@@ -15,7 +15,7 @@
                 <p>Ce menu est composer des ingrédients:</p>
                 <p *ngFor="let ing of meal.ingredients">{{ing.label}}</p>
             </div>
-            <button class="btn" routerLink="/connexion">Commander</button>
+            <button class="btn" routerLink="/connexion">Commander</button>    
         </div>
     </div>
 </div>

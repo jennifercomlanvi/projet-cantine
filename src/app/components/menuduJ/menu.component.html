@@ -1,5 +1,5 @@
 <div class="wrapper" *ngFor="let menu of menudj">
-    <div class="title">
+    <div class="title" *ngIf="menu.meals">
         <h4>{{menu.label}}</h4>
     </div>
     <div class="menu" *ngIf="menu.meals">
