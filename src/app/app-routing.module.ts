@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { ConnexionComponent } from './components/connexion/connexion.component';
+import { FooterComponent } from './components/footers/footer/footer.component';
 import { InscriptionComponent } from './components/inscription/inscription.component';
 import { MenuComponent } from './components/menuduJ/menu.component';
 import { UsersComponent } from './components/utilisateurs/users/users.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:'inscription', component:InscriptionComponent},
   {path:'utilisateur', component:UsersComponent},
   {path:'menu', component:MenuComponent},
+  {path:'footers', component:FooterComponent},
   {path:'menuaccueil', component:MenuaccueilComponent},
   {path:'menudelasemaine', component:MenudelasemaineComponent},
   {path:'menulundi', component:MenulundiComponent},

@@ -9,6 +9,10 @@ import { AccueilComponent } from './components/accueil/accueil.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './components/utilisateurs/users/users.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { CourseComponent } from './course/course.component';
+import { BootsrappComponent } from './bootsrapp/bootsrapp.component';
+import { FooterComponent } from './components/footers/footer/footer.component';
 import { MenuComponent } from './components/menuduJ/menu.component';
 import { MenuaccueilComponent } from './components/menuaccueil/menuaccueil.component';
 import { MenudelasemaineComponent } from './components/menudelasemaine/menudelasemaine.component';
@@ -27,6 +31,9 @@ import { MenujeudiComponent } from './components/menudelasemaine/menujeudi/menuj
     AccueilComponent,
     UsersComponent,
     MenuComponent,
+    CourseComponent,
+    BootsrappComponent,
+    FooterComponent,
     MenuaccueilComponent,
     MenudelasemaineComponent,
     UserDetailComponent,
@@ -35,6 +42,7 @@ import { MenujeudiComponent } from './components/menudelasemaine/menujeudi/menuj
     MenumardiComponent,
     MenumercrediComponent,
     MenujeudiComponent,
+
   ],
 
   imports: [
