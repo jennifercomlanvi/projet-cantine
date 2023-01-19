@@ -1,0 +1,59 @@
+<div *ngIf="user" class="col-lg-12">
+  <h1 class="titre">Les informations de {{user.name}} {{user.firstname}}</h1>
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Nom</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{user.name}} {{user.firstname}}</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Adresse mail</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{user.email}}</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Adresse</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{user.address}} {{user.town}} <span>{{user.postalCode}}</span> </p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Status</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="text-muted mb-0" *ngIf="user.status == 0">Actiif</p>
+                  <p class="text-muted mb-0" *ngIf="user.status == 1">inactif</p>
+                </div>
+                <div class="col-sm-1">
+                    <button class="btn" *ngIf="user.status == 1">Activer</button>    
+                    <button class="btn" *ngIf="user.status == 0">Désactiver</button>    
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Cagnotte</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="text-muted mb-0">{{user.wallet}}</p>
+                </div>
+                <div class="col-sm-1">
+                    <button class="btn">créditer</button>    
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

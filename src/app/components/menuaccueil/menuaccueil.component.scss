@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    // margin: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    background: white;
+    border-radius: 40px;
+    // box-shadow: 25px 25px 25px;
+}
+
+.titre{
+    // padding: 10px;
+    padding: 10px 25px;
+    font-size: 3rem;
+    font-weight: 50;
+    font-family: 'Pacifico', cursive;
+    text-align: center;  //aligner le titre au centre
+}
+
+.btn{
+    display: inline;   //aligner en block sur la mm ligne
+    border: 2px solid black;   //taille de la bordure de 2 pixel de couleur noir
+    background-color: violet;  //couleur de font violet 
+    margin: 25px 25px;  
+    padding: 10px 20px; 
+}
+
+.choix{
+    display: flex;
+    justify-content: center;
+}
