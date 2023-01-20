@@ -1,3 +1,8 @@
+import { MenumercrediComponent } from './components/menudelasemaine/menumercredi/menumercredi.component';
+import { MenujeudiComponent } from './components/menudelasemaine/menujeudi/menujeudi.component';
+import { MenuvendrediComponent } from './components/menudelasemaine/menuvendredi/menuvendredi.component';
+import { MenumardiComponent } from './components/menudelasemaine/menumardi/menumardi.component';
+import { MenulundiComponent } from './components/menudelasemaine/menulundi/menulundi.component';
 import { UserDetailComponent } from './components/utilisateurs/user-detail/user-detail.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -17,6 +22,11 @@ const routes: Routes = [
   {path:'menu', component:MenuComponent},
   {path:'menuaccueil', component:MenuaccueilComponent},
   {path:'menudelasemaine', component:MenudelasemaineComponent},
+  {path:'menulundi', component:MenulundiComponent},
+  {path:'menumardi', component:MenumardiComponent},
+  {path:'menumercredi', component:MenumercrediComponent},
+  {path:'menujeudi', component:MenujeudiComponent},
+  {path:'menuvendredi', component:MenuvendrediComponent},
   {path: 'utilisateur/:id', component :UserDetailComponent },
   {path:'', redirectTo: 'accueil', pathMatch:'full'}
 ];
