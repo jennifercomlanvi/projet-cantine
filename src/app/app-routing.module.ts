@@ -19,6 +19,7 @@ const routes: Routes = [
   {path:'connexion', component:ConnexionComponent},
   {path:'inscription', component:InscriptionComponent},
   {path:'utilisateur', component:UsersComponent},
+  {path:'footers', component:FooterComponent},
   {path:'menuaccueil', component:MenuaccueilComponent},
   {path:'menudelasemaine', component:MenudelasemaineComponent},
   {path:'menulundi', component:MenulundiComponent},

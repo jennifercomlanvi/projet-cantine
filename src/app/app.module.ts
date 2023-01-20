@@ -8,6 +8,13 @@ import { AccueilComponent } from './components/accueil/accueil.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './components/utilisateurs/users/users.component';
+<<<<<<<<< Temporary merge branch 1
+import { MenuComponent } from './components/menu/menu.component';
+import { CourseComponent } from './course/course.component';
+import { BootsrappComponent } from './bootsrapp/bootsrapp.component';
+import { FooterComponent } from './components/footers/footer/footer.component';
+=========
+import { MenuComponent } from './components/menuduJ/menu.component';
 import { MenuaccueilComponent } from './components/menuaccueil/menuaccueil.component';
 import { MenudelasemaineComponent } from './components/menudelasemaine/menudelasemaine.component';
 import { UserDetailComponent } from './components/utilisateurs/user-detail/user-detail.component';
@@ -16,10 +23,7 @@ import { MenulundiComponent } from './components/menudelasemaine/menulundi/menul
 import { MenumardiComponent } from './components/menudelasemaine/menumardi/menumardi.component';
 import { MenumercrediComponent } from './components/menudelasemaine/menumercredi/menumercredi.component';
 import { MenujeudiComponent } from './components/menudelasemaine/menujeudi/menujeudi.component';
-import { CourseComponent } from './course/course.component';
-import { BootsrappComponent } from './bootsrapp/bootsrapp.component';
-import { FooterComponent } from './components/footers/footer/footer.component';
-
+>>>>>>>>> Temporary merge branch 2
 
 @NgModule({
   declarations: [
@@ -28,6 +32,12 @@ import { FooterComponent } from './components/footers/footer/footer.component';
     InscriptionComponent,
     AccueilComponent,
     UsersComponent,
+    MenuComponent,
+<<<<<<<<< Temporary merge branch 1
+    CourseComponent,
+    BootsrappComponent,
+    FooterComponent,
+=========
     MenuaccueilComponent,
     MenudelasemaineComponent,
     UserDetailComponent,
@@ -36,9 +46,7 @@ import { FooterComponent } from './components/footers/footer/footer.component';
     MenumardiComponent,
     MenumercrediComponent,
     MenujeudiComponent,
-    CourseComponent,
-    BootsrappComponent,
-    FooterComponent,
+>>>>>>>>> Temporary merge branch 2
   ],
 
   imports: [
